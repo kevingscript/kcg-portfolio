@@ -44,9 +44,9 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p1"></p>
         <h1 class="title">Kevin C. Garner</h1>
-        <p class="section__text__p2">Junior Front-end Developer</p>
+        <p class="section__text__p2">Linux SysAdmin | Front-End Dev</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -59,12 +59,15 @@
           </button>
         </div>
         <div id="socials-container">
+          <!-- Does Open in New Tab? -->
           <img
             src="./assets/linkedin.png"
             alt="Kevin's LinkedIn profile"
             class="icon"
             onclick="location.href='https://linkedin.com/in/kevincgarner'"
+            target="_blank"
           />
+          <!-- Does Open in New Tab? -->
           <img
             src="./assets/github.png"
             alt="Kevin's Github profile"
@@ -94,7 +97,10 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>6+ months <br />Front-end Development</p>
+              <p class="about-container-paragraph">
+                2023-2024 <br />Front-End Development <br />Linux System
+                Administration
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -103,19 +109,58 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>2023 - 2025 <br />AAS Information Technology</p>
+              <p class="about-container-paragraph">
+                2023 - 2025 <br />AAS Information Technology
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              necessitatibus, delectus voluptatum, reiciendis hic dolore,
-              consequuntur illo quod voluptatem magni iure. Sunt inventore
-              quidem facilis praesentium, tempora recusandae alias reprehenderit
-              fugit fugiat itaque laborum tempore quo dignissimos quaerat
-              consequuntur, pariatur expedita. Delectus numquam quae beatae
-              repudiandae, earum ea reprehenderit unde.
+              ...I now realize that true fulfillment comes from doing work that
+              aligns with my natural gifts. After tons of self-evaluation, that
+              means system administration and software development—maintaining
+              systems and creating technology to solve real-world problems and
+              make a difference. I'm excited to grow, learn, and positively
+              impact this world. Sharing my story may also help others find
+              their path to fulfillment.
+              <!-- Trigger/Open the Modal -->
+              <button id="myBtn">Read More</button>
             </p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="about-paragraph-container">
+                  The journey began with a deep curiosity for technology and a
+                  knack for problem-solving. But without a degree or extensive
+                  experience, finding fulfilling work has always been a
+                  struggle. On top of that, ADHD, social anxiety, and supporting
+                  a family added to the pressure. While moving between many
+                  dead-end jobs, I'd always find satisfaction in helping
+                  colleagues, friends, and family with their tech issues.
+                </p>
+                <p class="about-paragraph-container2">
+                  I always display a strong work ethic, no matter the job role,
+                  but for some reason, that enthusiasm usually faded within a
+                  year or so. Things shifted after starting an account rep
+                  position for a telecom company. The role opened my eyes to
+                  potential careers within the tech industry. Switching to a
+                  tech rep position allowed me to troubleshoot mobile devices,
+                  giving me a sense of satisfaction from solving technical
+                  problems for others.
+                </p>
+                <p class="about-paragraph-container3">
+                  I now realize that true fulfillment comes from doing work that
+                  aligns with my natural gifts. After tons of self-evaluation,
+                  that means system administration and software
+                  development—maintaining systems and creating technology to
+                  solve real-world problems and make a difference. I'm excited
+                  to grow, learn, and positively impact this world. Sharing my
+                  story may also help others find their path to fulfillment.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -132,7 +177,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Front-end Development</h2>
+            <h2 class="experience-sub-title">Front-End Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -142,7 +187,7 @@
                 />
                 <div>
                   <h3>HTML</h3>
-                  <p>Intermediate</p>
+                  <p>Proficient</p>
                 </div>
               </article>
               <article>
@@ -153,7 +198,7 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Intermediate</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -164,7 +209,7 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Beginner</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -174,14 +219,14 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Beginner</p>
+                  <h3>Github</h3>
+                  <p>Novice</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Back-end Development</h2>
+            <h2 class="experience-sub-title">Linux System Administration</h2>
             <div class="article-container">
               <article>
                 <img
@@ -190,8 +235,19 @@
                   class="icon"
                 />
                 <div>
+                  <h3>Bash</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3>Python</h3>
-                  <p>Beginner</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -201,8 +257,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Beginner</p>
+                  <h3></h3>
+                  <p></p>
                 </div>
               </article>
               <article>
@@ -212,19 +268,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Beginner</p>
+                  <h3></h3>
+                  <p></p>
                 </div>
               </article>
             </div>
